@@ -6,3 +6,6 @@ bin/
 *.sln
 Makefile
 Makefile.*
+/yaml-cpp.vcxproj
+/yaml-cpp.vcxproj.filters
+/yaml-cpp.vcxproj.user
