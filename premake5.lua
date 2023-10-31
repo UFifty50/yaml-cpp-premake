@@ -1,6 +1,8 @@
 project "yaml-cpp"
 	kind "StaticLib"
 	language "C++"
+    cppdialect "C++17"
+    staticruntime "on"
 
 	targetdir ("bin/" .. outputDir .. "/%{prj.name}")
 	objdir ("bin/intermediate/" .. outputDir .. "/%{prj.name}")
@@ -33,13 +35,9 @@ project "yaml-cpp"
 	filter "system:linux"
 		pic "On"
 		systemversion "latest"
-        cppdialect "C++17"
-        staticruntime "off"
 
 	filter "system:windows"
 		systemversion "latest"
-        cppdialect "C++17"
-        staticruntime "off"
 
 		defines {
             "_CRT_SECURE_NO_WARNINGS"

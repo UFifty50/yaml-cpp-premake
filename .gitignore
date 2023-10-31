@@ -2,3 +2,7 @@ build/
 /tags
 /bazel-*
 bin/
+*.vcxproj*
+*.sln
+Makefile
+Makefile.*
